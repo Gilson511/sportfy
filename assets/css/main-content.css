@@ -90,7 +90,7 @@
 .header_logim{
     display: flex;
     justify-content: space-evenly;
-    margin-left: 500px;
+    margin-left: 10em;
     
 }
 .header_logim .logim{
