@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+html,body{
+    height: 1500px;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: var( --font-dm-sans);
+}
+
+.slidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 325px;
+}
+
+.slidebar_navigation{
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.slidebar_navigation .logo{
+    background: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.slidebar nav ul{
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+}
+
+.slidebar nav ul li a{
+    list-style: none;/* remove os estilos automaticos.*/
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 14px;
+    font-family: "DM Sans",sans-serif;
+}
+
+.slidebar li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.biblioteca{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: #121212;
+    width: 310px;
+    margin-top: 200px;
+    justify-content: space-around;
+    border-radius: 8px;
+    height: auto;
+}
+
+.biblioteca .text_biblioteca span{
+    color: #b3b3b3;
+    font-weight: 600px;
+
+}
+
+.text_biblioteca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text_biblioteca .area_logosoma{
+    background-color: #b3b3b3;
+}
+
+.text_biblioteca span{
+    font-family: "DM Sans",sans-serif;
+    text-decoration: none;
+}
+
+.text_biblioteca  a{
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.text_biblioteca p{
+    color: #b3b3b3;
+    
+}
+.biblioteca .area_logo{
+    margin-top: 30px;
+}
+
+.biblioteca .area_biblioteca{
+    display: flex;
+    justify-content: space-between;
+}
+
+.biblioteca .area_logosoma {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    margin-top: 0;
+    height: 30px;            /* Ajuste conforme necessário */
+    width: 30px;             /* Ajuste para garantir que o ícone tenha espaço */
+}
+    
+.biblioteca .text_biblioteca .fa-book{
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+
+.biblioteca .area_logosoma .fa-plus {
+    font-size: 24px;  /* Ajuste o tamanho conforme necessário */
+    color: #b3b3b3;   /* Aplique a cor desejada */
+}
+
+.biblioteca_content{
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #242424;
+    width: 285px;
+    align-content: center;
+    margin-left: 10px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.biblioteca_content .text_titulo{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+
+.biblioteca_content .text_subtitulo{
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+.biblioteca_content .text_titulo span{
+    text-align: justify;
+    font-weight: bold;
+    font-weight: 700px;
+    color: #fff;
+    font-size: 18px;
+    font-family: var( --font-dm-sans);
+}
+
+.biblioteca_content .text_subtitulo span{
+    text-align: justify;
+    font-weight: 500px;
+    color: #fff;
+    padding-bottom: 14px;
+    font-size: 14px;
+    font-family: var( --font-dm-sans);
+}
+
+.button{
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+.button .text_button{
+    padding: 10px 10px 10px 10px;
+    width:150px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-family: var( --font-dm-sans);  
+}
+
+.text_button span{
+    font-weight: 700px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text_cookies{
+    margin-top: 20px; /* Menos margem superior */
+    margin-right: 10px; /* Ajuste a margem direita */
+    margin-left: 20px; /* Para garantir que a div fique bem dentro do container */
+}
+
+.text_cookies span{
+    font-size: 20px;
+    color: #b3b3b3;
+    font-family: var( --font-dm-sans);;
+}
+
+.area_final{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 20px;
+ 
+}
+
+.area_final a{
+    margin-left: 30px;
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff; 
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.area_final .text span{
+    color: #fff;
+}
+
+/* Aplique um espaçamento automático para empurrar o footer para o final da página */
+footer {
+    margin-top: auto; /* Isso empurra o footer para o final da tela */
+    background: linear-gradient(to right ,#ae2896,#509bf5);
+    padding-top: 20px;
+    text-align: center;
+    
+    
+}
+
+/* Outros ajustes de estilo para o botão no footer */
+footer .button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button_footer{
+    margin-right: 40px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    
+}
+
+footer button:hover {
+    background-color: #1ed760; /* Cor de fundo do botão quando passa o mouse */
+}
+
+.area_footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.conteudo_footer{
+    text-align: justify;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.footer_footer{
+    margin-top: 0;
+    bottom:0;
+    position: fixed;
+    max-width: 100vw;
+    right: 0;
+    left: 0;
+}

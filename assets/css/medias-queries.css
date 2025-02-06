@@ -1,0 +1,15 @@
+@media(max-width:1015px){
+  .offer__list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media(min-width:420px) and (max-width:800px){
+    .offer__list-item {
+        display: grid;
+        grid-template-columns: 1fr;
+}
+
+}
